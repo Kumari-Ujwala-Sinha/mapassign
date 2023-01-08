@@ -1,0 +1,38 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    width:100%;
+    height:90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .multicolor-bar {
+	margin: 20px 20%;
+}
+
+.multicolor-bar .values .value {
+	float: left;
+	text-align: left;
+    
+}
+
+
+.multicolor-bar .bars .bar {
+	float: left;
+	height: 8px;
+}
+
+.multicolor-bar .bars div.bar:first-of-type {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.multicolor-bar .bars div.bar:last-of-type {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
