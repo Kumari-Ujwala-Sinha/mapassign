@@ -89,7 +89,8 @@ function App() {
   return (
     <div>
     <div className="App">
-    {content && <h1>{content.name} <span style={{fontSize:"10px",color:"#b7e6ff"}}>Usage Details</span></h1>}
+      
+    {content ? <h2>{content.name} <span style={{fontSize:"10px",color:"#b7e6ff"}}>Usage Details</span></h2>:<h2>Click the marker to see usage details</h2>}
       <ComposableMap data-tip="">
         <ZoomableGroup zoom={1}>
             {" "}
@@ -99,7 +100,7 @@ function App() {
             <Geography
               key={geo.rsmKey}
               geography={geo}
-              fill="#e5ebf2"
+              fill="#b4dcff70"
               
             />
           ))
